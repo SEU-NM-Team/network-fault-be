@@ -6,19 +6,12 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 import com.anji.plus.gaea.curd.dto.GaeaBaseDTO;
-import com.anjiplus.template.gaea.business.modules.accessuser.dao.entity.AccessUser;
 import io.swagger.annotations.ApiModelProperty;
-import com.anji.plus.gaea.annotation.Formatter;
 import lombok.Data;
 import java.util.Date;
 import java.util.List;
 
-/**
-*
-* @description 用户管理 dto
-* @author 木子李·De <lide1202@hotmail.com>
-* @date 2019-02-17 08:50:11.902
-**/
+
 @Data
 public class AccessUserDto extends GaeaBaseDTO implements Serializable {
 

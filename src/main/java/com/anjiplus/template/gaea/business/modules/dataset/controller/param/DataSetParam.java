@@ -9,11 +9,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 
-/**
-* @desc DataSet 数据集查询输入类
-* @author Raod
-* @date 2021-03-18 12:11:31.150755900
-**/
+
 @Data
 public class DataSetParam extends PageParam implements Serializable{
     /** 数据集编码 */

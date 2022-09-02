@@ -10,9 +10,6 @@ import groovy.lang.GroovyClassLoader;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
-import javax.script.Invocable;
-import javax.script.ScriptEngine;
-import javax.script.ScriptEngineManager;
 import java.util.List;
 
 /**

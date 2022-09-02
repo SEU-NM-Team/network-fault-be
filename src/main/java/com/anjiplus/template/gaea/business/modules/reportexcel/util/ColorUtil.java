@@ -12,11 +12,7 @@ import org.apache.poi.ss.usermodel.Color;
 import org.apache.poi.xssf.usermodel.XSSFColor;
 
 
-/**
- * 来自：https://github.com/mengshukeji/LuckysheetServer
- *
- * @author Administrator
- */
+
 @Slf4j
 public class ColorUtil {
 
@@ -96,13 +92,7 @@ public class ColorUtil {
         return hex;
     }
 
-    /**
-     * @param cell 单元格
-     * @return 转换RGB颜色值
-     * @description tint转换RBG
-     * @author zhouhang
-     * @date 2021/4/26
-     */
+
     public static String getFillColorHex(Cell cell) {
         String fillColorString = null;
         if (cell != null) {

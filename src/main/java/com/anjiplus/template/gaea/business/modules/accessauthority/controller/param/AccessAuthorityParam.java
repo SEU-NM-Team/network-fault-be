@@ -6,15 +6,8 @@ import java.io.Serializable;
 import com.anji.plus.gaea.annotation.Query;
 import com.anji.plus.gaea.constant.QueryEnum;
 import com.anji.plus.gaea.curd.params.PageParam;
-import java.util.List;
 
-import java.util.Date;
 
-/**
-* @desc AccessAuthority 权限管理查询输入类
-* @author 木子李·De <lide1202@hotmail.com>
-* @date 2019-02-17 08:50:10.009
-**/
 @Data
 public class AccessAuthorityParam extends PageParam implements Serializable{
 

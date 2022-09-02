@@ -7,12 +7,7 @@ import lombok.Data;
 
 import java.io.Serializable;
 
-/**
- * (GaeaDict)实体类
- *
- * @author lr
- * @since 2021-02-23 10:01:02
- */
+
 @ApiModel(value = "")
 @Data
 public class GaeaDictDTO extends GaeaBaseDTO implements Serializable {

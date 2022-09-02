@@ -36,11 +36,7 @@ import org.springframework.stereotype.Service;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
-* @desc AccessUser 用户管理服务实现
-* @author 木子李·De <lide1202@hotmail.com>
-* @date 2019-02-17 08:50:11.902
-**/
+
 @Service
 public class AccessUserServiceImpl implements AccessUserService {
 

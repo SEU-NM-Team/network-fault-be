@@ -8,12 +8,7 @@ import java.io.Serializable;
 import java.util.Map;
 
 
-/**
-*
-* @description 数据源 dto
-* @author Raod
-* @date 2021-03-18 12:09:57.728203200
-**/
+
 @Data
 public class DataSourceDto extends GaeaBaseDTO implements Serializable {
     /** 数据源编码 */

@@ -7,12 +7,7 @@ import lombok.Data;
 
 import java.io.Serializable;
 
-/**
- * TODO
- *
- * @author chenkening
- * @date 2021/3/26 10:40
- */
+
 @Data
 public class ReportParam extends PageParam implements Serializable{
 

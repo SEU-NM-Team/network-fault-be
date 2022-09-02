@@ -1,8 +1,6 @@
 package com.anjiplus.template.gaea.business.enums;
 
-/**
- * Created by raodeming on 2021/9/3.
- */
+
 public enum ExportTypeEnum {
 
     /**gaea_excel*/

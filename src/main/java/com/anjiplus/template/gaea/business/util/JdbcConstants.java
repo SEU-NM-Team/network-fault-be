@@ -1,8 +1,6 @@
 package com.anjiplus.template.gaea.business.util;
 
-/**
- * Created by raodeming on 2021/3/19.
- */
+
 public class JdbcConstants {
    /**
     * 已支持的数据源

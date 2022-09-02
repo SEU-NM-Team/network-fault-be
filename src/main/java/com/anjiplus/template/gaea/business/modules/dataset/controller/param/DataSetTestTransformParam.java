@@ -5,16 +5,11 @@ import com.anjiplus.template.gaea.business.modules.datasetparam.controller.dto.D
 import com.anjiplus.template.gaea.business.modules.datasettransform.controller.dto.DataSetTransformDto;
 import lombok.Data;
 
-import javax.validation.constraints.NotBlank;
 import java.io.Serializable;
 import java.util.List;
 
 
-/**
-* @desc DataSet 数据集查询输入类
-* @author Raod
-* @date 2021-03-18 12:11:31.150755900
-**/
+
 @Data
 public class DataSetTestTransformParam implements Serializable{
 

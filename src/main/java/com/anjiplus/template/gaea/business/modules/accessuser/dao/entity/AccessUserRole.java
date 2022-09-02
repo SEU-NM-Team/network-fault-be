@@ -8,11 +8,7 @@ import lombok.Data;
 
 import java.util.Date;
 
-/**
-* @description 用户--角色关联关系 entity
-* @author 木子李·De <lide1202@hotmail.com>
-* @date 2019-02-17 08:50:11.902
-**/
+
 @TableName(keepGlobalPrefix=true, value="access_user_role")
 @Data
 public class AccessUserRole extends GaeaBaseEntity {

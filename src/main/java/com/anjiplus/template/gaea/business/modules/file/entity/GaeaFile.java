@@ -7,12 +7,7 @@ import lombok.Data;
 
 import java.io.Serializable;
 
-/**
- * (GaeaFile)实体类
- *
- * @author peiyanni
- * @since 2021-02-18 14:48:20
- */
+
 @TableName(keepGlobalPrefix=true, value = "gaea_file")
 @Data
 public class GaeaFile extends GaeaBaseEntity implements Serializable {

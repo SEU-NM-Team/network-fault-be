@@ -5,11 +5,7 @@ import lombok.Data;
 
 import java.io.Serializable;
 
-/**
- *
- * @author chenkening
- * @date 2021/3/26 10:34
- */
+
 @Data
 public class ReportDto extends GaeaBaseDTO implements Serializable {
 

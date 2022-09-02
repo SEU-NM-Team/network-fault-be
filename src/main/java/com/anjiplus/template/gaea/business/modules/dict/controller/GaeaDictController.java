@@ -17,12 +17,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
-/**
- * (GaeaDict)实体类
- *
- * @author lr
- * @since 2021-02-23 10:01:02
- */
+
 @RestController
 @RequestMapping("/gaeaDict")
 @Api(value = "/gaeaDict", tags = "")

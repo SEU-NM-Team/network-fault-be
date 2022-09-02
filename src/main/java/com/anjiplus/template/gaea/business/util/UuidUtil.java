@@ -3,9 +3,7 @@ package com.anjiplus.template.gaea.business.util;
 import java.security.SecureRandom;
 import java.util.UUID;
 
-/**
- * Created by raodeming on 2021/8/19.
- */
+
 public class UuidUtil {
 
     public static String[] chars = new String[] { "a", "b", "c", "d", "e", "f",

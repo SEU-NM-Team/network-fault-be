@@ -13,12 +13,7 @@ import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * TODO
- *
- * @author chenkening
- * @date 2021/3/26 10:19
- */
+
 @RestController
 @Api(tags = "报表数据管理")
 @Permission(code = "reportManage", name = "报表管理")

@@ -1,5 +1,5 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.anjiplus.template.gaea.business.modules.datasetparam.dao.DataSetParamMapper">
+<mapper namespace="cose.anjiplus.template.gaea.business.modules.datasetparam.dao.DataSetParamMapper">
 
     <resultMap type="com.anjiplus.template.gaea.business.modules.datasetparam.dao.entity.DataSetParam" id="DataSetParamMap">
         <!--jdbcType="{column.columnType}"-->

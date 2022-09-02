@@ -9,9 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * Created by raodeming on 2021/6/24.
- */
+
 @Component
 @Order(Ordered.HIGHEST_PRECEDENCE)
 public class CorsFilter implements Filter {

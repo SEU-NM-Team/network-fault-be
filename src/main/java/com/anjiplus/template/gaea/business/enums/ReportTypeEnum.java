@@ -1,8 +1,6 @@
 package com.anjiplus.template.gaea.business.enums;
 
-/**
- * Created by raodeming on 2022/5/8.
- */
+
 public enum ReportTypeEnum {
 
     /**report_screen*/

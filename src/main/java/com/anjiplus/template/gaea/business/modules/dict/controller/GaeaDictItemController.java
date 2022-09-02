@@ -11,12 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.beans.factory.annotation.Autowired;
 
-/**
- * 数据字典项(GaeaDictItem)实体类
- *
- * @author lirui
- * @since 2021-03-10 13:05:59
- */
+
 @RestController
 @RequestMapping("/gaeaDictItem")
 @Api(value = "/gaeaDictItem", tags = "数据字典项")

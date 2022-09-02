@@ -1,7 +1,6 @@
 
 package com.anjiplus.template.gaea.business.modules.accessauthority.service.impl;
 
-import com.alibaba.fastjson.JSONObject;
 import com.anji.plus.gaea.bean.TreeNode;
 import com.anji.plus.gaea.cache.CacheHelper;
 import com.anji.plus.gaea.constant.Enabled;
@@ -23,11 +22,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-/**
-* @desc AccessAuthority 权限管理服务实现
-* @author 木子李·De <lide1202@hotmail.com>
-* @date 2019-02-17 08:50:10.009
-**/
+
 @Service
 public class AccessAuthorityServiceImpl implements AccessAuthorityService {
 

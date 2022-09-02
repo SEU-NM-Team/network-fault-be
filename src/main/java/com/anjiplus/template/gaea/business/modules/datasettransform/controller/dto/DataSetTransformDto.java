@@ -7,12 +7,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 
-/**
-*
-* @description 数据集数据转换 dto
-* @author Raod
-* @date 2021-03-18 12:13:15.591309400
-**/
+
 @Data
 public class DataSetTransformDto extends GaeaBaseDTO implements Serializable {
     /** 数据集编码 */

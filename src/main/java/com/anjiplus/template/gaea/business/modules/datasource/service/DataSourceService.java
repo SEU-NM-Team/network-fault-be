@@ -11,11 +11,7 @@ import com.anjiplus.template.gaea.business.modules.datasource.dao.entity.DataSou
 
 import java.util.List;
 
-/**
-* @desc DataSource 数据集服务接口
-* @author Raod
-* @date 2021-03-18 12:09:57.728203200
-**/
+
 public interface DataSourceService extends GaeaBaseService<DataSourceParam, DataSource> {
 
     /**

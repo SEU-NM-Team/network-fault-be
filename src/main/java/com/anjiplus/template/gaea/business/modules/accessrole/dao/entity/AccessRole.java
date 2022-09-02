@@ -4,13 +4,8 @@ package com.anjiplus.template.gaea.business.modules.accessrole.dao.entity;
 import lombok.Data;
 import com.anji.plus.gaea.curd.entity.GaeaBaseEntity;
 import com.baomidou.mybatisplus.annotation.TableName;
-import javax.validation.constraints.*;
-import java.util.Date;
-/**
-* @description 角色管理 entity
-* @author 木子李·De <lide1202@hotmail.com>
-* @date 2019-02-17 08:50:14.136
-**/
+
+
 @TableName(keepGlobalPrefix=true, value="access_role")
 @Data
 public class AccessRole extends GaeaBaseEntity {

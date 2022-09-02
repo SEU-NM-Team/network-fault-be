@@ -4,13 +4,9 @@ package com.anjiplus.template.gaea.business.modules.accessuser.dao.entity;
 import lombok.Data;
 import com.anji.plus.gaea.curd.entity.GaeaBaseEntity;
 import com.baomidou.mybatisplus.annotation.TableName;
-import javax.validation.constraints.*;
+
 import java.util.Date;
-/**
-* @description 用户管理 entity
-* @author 木子李·De <lide1202@hotmail.com>
-* @date 2019-02-17 08:50:11.902
-**/
+
 @TableName(keepGlobalPrefix=true, value="access_user")
 @Data
 public class AccessUser extends GaeaBaseEntity {

@@ -1,10 +1,6 @@
 package com.anjiplus.template.gaea.business.code;
 
-/**
- * 响应码
- * @author lr
- * @since 2021-02-22
- */
+
 public interface ResponseCode {
 
     String NOT_NULL = "field.not.null";

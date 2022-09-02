@@ -10,12 +10,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-/**
- * (GaeaDict)Service
- *
- * @author lr
- * @since 2021-02-23 10:01:02
- */
+
 public interface GaeaDictService extends GaeaBaseService<GaeaDictParam, GaeaDict> {
 
     /**

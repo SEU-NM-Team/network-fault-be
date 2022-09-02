@@ -7,12 +7,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 
 import java.io.Serializable;
 
-/**
- * (GaeaDict)实体类
- *
- * @author lr
- * @since 2021-02-23 10:01:02
- */
+
 @TableName(keepGlobalPrefix=true, value = "gaea_dict")
 public class GaeaDict extends GaeaBaseEntity implements Serializable {
     /**

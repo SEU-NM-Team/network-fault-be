@@ -6,12 +6,6 @@ import com.anjiplus.template.gaea.business.modules.reportexcel.controller.dto.Re
 import com.anjiplus.template.gaea.business.modules.reportexcel.controller.param.ReportExcelParam;
 import com.anjiplus.template.gaea.business.modules.reportexcel.dao.entity.ReportExcel;
 
-/**
- * TODO
- *
- * @author chenkening
- * @date 2021/4/13 15:14
- */
 public interface ReportExcelService extends GaeaBaseService<ReportExcelParam, ReportExcel> {
 
     /**

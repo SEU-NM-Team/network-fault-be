@@ -2,14 +2,10 @@
 package com.anjiplus.template.gaea.business.modules.accessrole.controller;
 
 import com.anji.plus.gaea.annotation.Permission;
-import com.anji.plus.gaea.annotation.AccessKey;
 import com.anji.plus.gaea.bean.ResponseBean;
-import com.anji.plus.gaea.bean.TreeNode;
 import com.anji.plus.gaea.curd.controller.GaeaBaseController;
 import com.anji.plus.gaea.curd.service.GaeaBaseService;
 import com.anji.plus.gaea.holder.UserContentHolder;
-import com.anji.plus.gaea.utils.GaeaBeanUtils;
-import com.anji.plus.gaea.utils.GaeaUtils;
 import com.anjiplus.template.gaea.business.modules.accessrole.dao.entity.AccessRole;
 import com.anjiplus.template.gaea.business.modules.accessrole.service.AccessRoleService;
 import com.anjiplus.template.gaea.business.modules.accessrole.controller.dto.AccessRoleDto;
@@ -18,14 +14,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import io.swagger.annotations.Api;
 
-import java.util.List;
 import java.util.Map;
 
-/**
-* @desc 角色管理 controller
-* @author 木子李·De <lide1202@hotmail.com>
-* @date 2019-02-17 08:50:14.136
-**/
+
 @RestController
 @Api(tags = "角色管理管理")
 @RequestMapping("/accessRole")

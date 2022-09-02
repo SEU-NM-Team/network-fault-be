@@ -9,11 +9,7 @@ import com.anjiplus.template.gaea.business.modules.datasetparam.dao.entity.DataS
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author Raod
- * @desc DataSetParam 数据集动态参数服务接口
- * @date 2021-03-18 12:12:33.108033200
- **/
+
 public interface DataSetParamService extends GaeaBaseService<DataSetParamParam, DataSetParam> {
 
     /**

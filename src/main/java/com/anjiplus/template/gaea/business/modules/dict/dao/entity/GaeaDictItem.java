@@ -2,19 +2,14 @@ package com.anjiplus.template.gaea.business.modules.dict.dao.entity;
 
 import com.anji.plus.gaea.annotation.UnionUnique;
 import com.anji.plus.gaea.annotation.UnionUniqueCode;
-import com.anjiplus.template.gaea.business.code.*;
 import com.anji.plus.gaea.curd.entity.GaeaBaseEntity;
+import com.anjiplus.template.gaea.business.code.ResponseCode;
 import com.anjiplus.template.gaea.business.constant.BusinessConstant;
 import com.baomidou.mybatisplus.annotation.TableName;
 
 import java.io.Serializable;
 
-/**
- * 数据字典项(GaeaDictItem)实体类
- *
- * @author lirui
- * @since 2021-03-09 15:52:41
- */
+
 @TableName(keepGlobalPrefix=true,value = "gaea_dict_item")
 @UnionUniqueCode(group = BusinessConstant.DICT_ITEM_EXIST_GROUP, code = ResponseCode.DICT_ITEM_REPEAT)
 public class GaeaDictItem extends GaeaBaseEntity implements Serializable {

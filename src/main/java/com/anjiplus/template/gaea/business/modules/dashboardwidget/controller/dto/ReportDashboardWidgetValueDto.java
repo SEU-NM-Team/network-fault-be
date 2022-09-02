@@ -7,12 +7,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 
-/**
-*
-* @description 大屏看板数据渲染 dto，已弃用
-* @author Raod
-* @date 2021-04-12 15:12:43.724
-**/
+
 @Data
 public class ReportDashboardWidgetValueDto implements Serializable {
     /** 报表编码 */

@@ -15,12 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-/**
-* @desc 数据源 controller
-* @website https://gitee.com/anji-plus/gaea
-* @author Raod
-* @date 2021-03-18 12:09:57.728203200
-**/
+
 @RestController
 @Api(tags = "数据源管理")
 @Permission(code = "datasourceManage", name = "数据源管理")

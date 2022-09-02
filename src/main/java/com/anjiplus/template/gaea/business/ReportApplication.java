@@ -4,13 +4,7 @@ import com.anji.plus.gaea.annotation.enabled.EnabledGaeaConfiguration;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScans;
 
-/**
- * 业务模板
- * @author lr
- * @since 2021-02-03
- */
 @EnabledGaeaConfiguration
 @SpringBootApplication(scanBasePackages = {
         "com.anjiplus.template.gaea",

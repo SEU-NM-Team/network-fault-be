@@ -5,9 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-/**
- * Created by raodeming on 2021/4/29.
- */
+
 public class DateUtil {
 
     private static String defaultDatePattern = "yyyy-MM-dd";

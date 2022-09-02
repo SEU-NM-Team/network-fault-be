@@ -7,12 +7,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 
-/**
-*
-* @description 数据集动态参数 dto
-* @author Raod
-* @date 2021-03-18 12:12:33.108033200
-**/
+
 @Data
 public class DataSetParamDto extends GaeaBaseDTO implements Serializable {
     /** 数据集编码 */

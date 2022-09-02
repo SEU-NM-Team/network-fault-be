@@ -23,11 +23,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-/**
-* @desc AccessRole 角色管理服务实现
-* @author 木子李·De <lide1202@hotmail.com>
-* @date 2019-02-17 08:50:14.136
-**/
+
 @Service
 public class AccessRoleServiceImpl implements AccessRoleService {
 

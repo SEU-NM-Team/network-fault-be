@@ -16,11 +16,7 @@ import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * @author Raod
- * @desc 报表分享 controller
- * @date 2021-08-18 13:37:26.663
- **/
+
 @RestController
 @Api(tags = "报表分享管理")
 @RequestMapping("/reportShare")

@@ -21,12 +21,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.*;
 
-/**
- * 来自：https://github.com/mengshukeji/LuckysheetServer
- * 使用poi导出xls
- *
- * @author Administrator
- */
+
 public class XlsUtil {
 
     private final static String MODEL = "{\"c\":0,\"r\":0,\"v\":{\"m\":\"模板\",\"v\":\"模板\",\"bl\":1,\"ct\":{\"t\":\"g\",\"fa\":\"General\"}}}";
@@ -62,13 +57,7 @@ public class XlsUtil {
         wb.write(outputStream);
     }
 
-    /**
-     * @param workbook 工作簿
-     * @return Map
-     * @description 读取excel
-     * @author zhouhang
-     * @date 2021/4/20
-     */
+
     public static List<GridRecordDataModel> readExcel(Workbook workbook) {
         List<GridRecordDataModel> list = new ArrayList<>();
         Iterator<Sheet> sheetIterator = workbook.sheetIterator();
@@ -109,14 +98,7 @@ public class XlsUtil {
         return model;
     }
 
-    /**
-     * @param sheet    sheet页
-     * @param model    数据存储
-     * @param workbook excel
-     * @description 读取单个sheet页
-     * @author zhouhang
-     * @date 2021/4/20
-     */
+
     private static void readSheet(Sheet sheet, GridRecordDataModel model, Workbook workbook) {
         //excel数据集合
         List<JSONObject> dataList = new ArrayList<>();
@@ -198,13 +180,7 @@ public class XlsUtil {
         model.getJson_data().getJSONObject("config").put("rowlen", rowLenObj);
     }
 
-    /**
-     * @param sheet sheet页信息
-     * @return Map<String, String> 单元格合并信息
-     * @description 获取合并单元格信息 所有合并单元的MAP
-     * @author zhouhang
-     * @date 2021/4/21
-     */
+
     @NotNull
     private static Map<String, String> getRangeMap(Sheet sheet) {
         List<CellRangeAddress> rangeAddressList = sheet.getMergedRegions();
@@ -224,15 +200,7 @@ public class XlsUtil {
         return rangeMap;
     }
 
-    /**
-     * @param rangeMap  合并信息
-     * @param row       行信息
-     * @param cell      单元格
-     * @param dataModel 单元格数据存储信息
-     * @description 设置单元格合并标记
-     * @author zhouhang
-     * @date 2021/4/21
-     */
+
     private static void dealWithCellMarge(Map<String, String> rangeMap, Row row, Cell cell, JSONObject dataModel) {
         if (rangeMap.containsKey(row.getRowNum() + "_" + cell.getColumnIndex())) {
             String margeValue = rangeMap.get(row.getRowNum() + "_" + cell.getColumnIndex());
@@ -248,16 +216,7 @@ public class XlsUtil {
         }
     }
 
-    /**
-     * @param model     sheet页信息
-     * @param dataModel 单元格信息
-     * @param cell      单元格
-     * @param sheet     sheet页数据
-     * @param workbook  excel
-     * @description 获取单元格样式，设置单元格样式
-     * @author zhouhang
-     * @date 2021/4/21
-     */
+
     private static void dealWithExcelStyle(GridRecordDataModel model, JSONObject dataModel, Cell cell, Sheet sheet, Workbook workbook) {
         //设置单元格合并信息
         dealWithExcelMerge(model, sheet);
@@ -267,14 +226,7 @@ public class XlsUtil {
         dealWithBorderStyle(model, cell, workbook);
     }
 
-    /**
-     * @param model    在线表格存储单元
-     * @param cell     cell
-     * @param workbook workbook
-     * @description 设置单元格样式
-     * @author zhouhang
-     * @date 2021/4/22
-     */
+
     private static void dealWithBorderStyle(GridRecordDataModel model, Cell cell, Workbook workbook) {
         CellStyle cellStyle = cell.getCellStyle();
         //判断是否存在边框
@@ -344,13 +296,7 @@ public class XlsUtil {
         }
     }
 
-    /**
-     * @param rgb RBG short
-     * @return rbg(0, 0, 0)
-     * @description 转换RBG rbg(0,0,0)
-     * @author zhouhang
-     * @date 2021/4/26
-     */
+
     private static String dealWithRbgShort(short[] rgb) {
         return getRbg(Objects.nonNull(rgb), rgb[0], rgb[1], rgb[2]);
     }
@@ -364,13 +310,7 @@ public class XlsUtil {
         }
     }
 
-    /**
-     * @param rgb RBG byte
-     * @return rbg(0, 0, 0)
-     * @description 转换RBG rbg(0,0,0)
-     * @author zhouhang
-     * @date 2021/4/26
-     */
+
     private static String dealWithRbg(byte[] rgb) {
         if (Objects.isNull(rgb)) {
             return "rgb(0, 0, 0)";
@@ -379,14 +319,7 @@ public class XlsUtil {
         return getRbg(true, shorts[0], shorts[1], shorts[2]);
     }
 
-    /**
-     * @param dataModel 单元格内容
-     * @param workbook  workbook
-     * @param cell      cell
-     * @description s设置字体样式
-     * @author zhouhang
-     * @date 2021/4/21
-     */
+
     private static void setFontStyle(JSONObject dataModel, Workbook workbook, Cell cell) {
         CellStyle cellStyle = cell.getCellStyle();
         Font font = workbook.getFontAt(cellStyle.getFontIndexAsInt());
@@ -426,13 +359,7 @@ public class XlsUtil {
         }
     }
 
-    /**
-     * @param model sheet页信息
-     * @param sheet sheet页
-     * @description 设置单元格合并信息
-     * @author zhouhang
-     * @date 2021/4/21
-     */
+
     private static void dealWithExcelMerge(GridRecordDataModel model, Sheet sheet) {
         if (CollectionUtils.isNotEmpty(sheet.getMergedRegions())) {
             //{"color":"","list_id":"","column":60,"index":"1","jfgird_select_save":[],"rh_height":1790,"visibledatacolumn":[],"scrollTop":0,"block_id":"fblock","rowsplit":[],"visibledatarow":[],"jfgrid_selection_range":{},"name":"Sheet1","celldata":[],"ch_width":4748,"row":84,"scrollLeft":0,"id":364598,"chart":[],"config":{},"order":0,"status":1}

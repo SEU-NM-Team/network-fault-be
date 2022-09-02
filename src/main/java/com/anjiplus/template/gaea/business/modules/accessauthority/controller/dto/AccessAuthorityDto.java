@@ -5,19 +5,11 @@ import java.io.Serializable;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
-import com.anji.plus.gaea.annotation.Query;
-import com.anji.plus.gaea.constant.QueryEnum;
 import com.anji.plus.gaea.curd.dto.GaeaBaseDTO;
 import io.swagger.annotations.ApiModelProperty;
-import com.anji.plus.gaea.annotation.Formatter;
 import lombok.Data;
 
-/**
-*
-* @description 权限管理 dto
-* @author 木子李·De <lide1202@hotmail.com>
-* @date 2019-02-17 08:50:10.009
-**/
+
 @Data
 public class AccessAuthorityDto extends GaeaBaseDTO implements Serializable {
     /** 父菜单代码 */

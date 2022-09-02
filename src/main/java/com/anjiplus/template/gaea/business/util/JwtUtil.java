@@ -12,9 +12,7 @@ import org.apache.commons.lang3.StringUtils;
 import java.util.Date;
 import java.util.Map;
 
-/**
- * Created by raodeming on 2021/8/18.
- */
+
 public class JwtUtil {
 
     private static final String JWT_SECRET = "aj-report";

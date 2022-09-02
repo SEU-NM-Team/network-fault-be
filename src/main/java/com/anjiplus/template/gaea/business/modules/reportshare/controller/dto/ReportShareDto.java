@@ -3,7 +3,6 @@ package com.anjiplus.template.gaea.business.modules.reportshare.controller.dto;
 
 import java.io.Serializable;
 
-import com.anji.plus.gaea.annotation.Formatter;
 import com.anji.plus.gaea.curd.dto.GaeaBaseDTO;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -12,12 +11,7 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
 
-/**
-*
-* @description 报表分享 dto
-* @author Raod
-* @date 2021-08-18 13:37:26.663
-**/
+
 @Data
 public class ReportShareDto extends GaeaBaseDTO implements Serializable {
     /** 分享编码，系统生成，默认UUID */

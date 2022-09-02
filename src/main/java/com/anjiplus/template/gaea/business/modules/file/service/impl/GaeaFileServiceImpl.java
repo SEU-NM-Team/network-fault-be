@@ -35,12 +35,6 @@ import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
-/**
- * (GaeaFile)ServiceImpl
- *
- * @author peiyanni
- * @since 2021-02-18 14:48:26
- */
 @Service
 @Slf4j
 public class GaeaFileServiceImpl implements GaeaFileService {

@@ -6,11 +6,7 @@ import lombok.Data;
 
 import java.util.List;
 
-/**
- * 存储对象类
- *
- * @author Administrator
- */
+
 @Data
 public class GridRecordDataModel {
     /**

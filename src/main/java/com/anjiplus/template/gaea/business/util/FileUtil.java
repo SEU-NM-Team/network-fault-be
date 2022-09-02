@@ -14,9 +14,7 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.util.Enumeration;
 import java.util.zip.*;
 
-/**
- * Created by raodeming on 2021/8/23.
- */
+
 @Slf4j
 public class FileUtil {
 

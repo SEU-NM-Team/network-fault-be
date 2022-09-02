@@ -1,10 +1,6 @@
 package com.anjiplus.template.gaea.business.enums;
 
-/**
- * @author zhouhang
- * @description EXCEL居中方式
- * @date 2021/4/26
- */
+
 public enum ExcelCenterStyleEnum {
     /**
      * 左对齐
@@ -54,13 +50,7 @@ public enum ExcelCenterStyleEnum {
         this.name = name;
     }
 
-    /**
-     * @param code excel居中样式code
-     * @return Enum_ExcelCenterStyle
-     * @description 根据excel居中样式获取在线文档居中样式
-     * @author zhouhang
-     * @date 2021/4/26
-     */
+
     public static ExcelCenterStyleEnum getExcelCenterStyleByExcelCenterCode(short code) {
         for (ExcelCenterStyleEnum value : ExcelCenterStyleEnum.values()) {
             if (code == value.getExcelCode()) {
